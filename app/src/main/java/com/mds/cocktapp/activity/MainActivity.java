@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.mds.cocktapp.R;
 import com.mds.cocktapp.adapter.CocktailsAdapter;
@@ -23,8 +25,11 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "Cocktail%";
+    private static final String EXTRA_MESSAGE = "test";
 
     private RecyclerView rv_main_cocktails;
+    private String mDetailMessage;
+
 
     private List<Cocktail> cocktails = new ArrayList<>();
 
@@ -59,5 +64,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void viewDetail(View view) {
+        mDetailMessage = "tset";
+
+        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+        intent.putExtra(EXTRA_MESSAGE, mDetailMessage);
+        startActivity(intent);
     }
 }

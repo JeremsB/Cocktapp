@@ -1,5 +1,6 @@
 package com.mds.cocktapp.adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mds.cocktapp.R;
+import com.mds.cocktapp.activity.DetailActivity;
+import com.mds.cocktapp.activity.MainActivity;
 import com.mds.cocktapp.model.Cocktail;
 import com.mds.cocktapp.viewholder.CocktailViewHolder;
 import com.squareup.picasso.Picasso;
@@ -19,6 +22,8 @@ import java.util.List;
 public class CocktailsAdapter extends RecyclerView.Adapter<CocktailViewHolder> {
 
     private List<Cocktail> cocktails;
+    public static final String EXTRA_MESSAGE = "com.mds.cocktapp.extra.MESSAGE";
+
 
     public CocktailsAdapter(List<Cocktail> cocktails) {
         this.cocktails = cocktails;
@@ -36,10 +41,23 @@ public class CocktailsAdapter extends RecyclerView.Adapter<CocktailViewHolder> {
     public void onBindViewHolder(@NonNull CocktailViewHolder holder, int position) {
         Cocktail cocktail = cocktails.get(position);
         TextView tv_item_cocktail_name = holder.getTv_item_cocktail_name();
-        tv_item_cocktail_name.setText(cocktail.getStrDrink());
+        tv_item_cocktail_name.setText(cocktail.getName());
 
         ImageView tv_item_cocktail_image = holder.getTv_item_cocktail_image();
         Picasso.get().load(cocktail.getStrDrinkThumb()).into(tv_item_cocktail_image);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String idCocktail=cocktails.get(position).getId();
+                //You can call detail fragment here
+                /*
+                Intent intent = new Intent(this, DetailActivity.class);
+                intent.putExtra(EXTRA_MESSAGE, idCocktail);
+                startActivity(intent);
+                */
+            }
+        });
     }
 
     @Override
