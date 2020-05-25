@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<DataContainer> call, Response<DataContainer> response) {
                 Log.d(TAG, "MainActivity - getCocktailsCall - onResponse");
                 Log.d(TAG, response.code() + "");
-                Log.d(TAG, response.body().toString());
+                Log.d(TAG, response.body().toString() + "");
                 cocktails.clear();
                 cocktails.addAll(response.body().getCocktails());
                 cocktailsAdapter.notifyDataSetChanged();

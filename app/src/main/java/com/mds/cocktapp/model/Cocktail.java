@@ -4,18 +4,18 @@ import com.google.gson.annotations.SerializedName;
 
 public class Cocktail {
 
-    @SerializedName("id")
-    private String id;
-    @SerializedName("name")
-    private String name;
+    @SerializedName("idDrink")
+    private String idDrink;
+    @SerializedName("strDrink")
+    private String strDrink;
     @SerializedName("instructions")
     private String instructions;
     @SerializedName("alcoholic")
     private String alcoholic;
     @SerializedName("glass")
     private String glass;
-    @SerializedName("imagePath")
-    private String imagePath;
+    @SerializedName("strDrinkThumb")
+    private String strDrinkThumb;
     @SerializedName("ingred1")
     private String ingred1;
     @SerializedName("ingred2")
@@ -39,13 +39,13 @@ public class Cocktail {
 
     public Cocktail(){}
 
-    public Cocktail(String id, String name, String instructions, String alcoholic, String glass, String imagePath, String ingred1, String ingred2, String ingred3, String ingred4, String ingred5, String measure1, String measure2, String measure3, String measure4, String measure5) {
-        this.id = id;
-        this.name = name;
+    public Cocktail(String idDrink, String strDrink, String instructions, String alcoholic, String glass, String strDrinkThumb, String ingred1, String ingred2, String ingred3, String ingred4, String ingred5, String measure1, String measure2, String measure3, String measure4, String measure5) {
+        this.idDrink = idDrink;
+        this.strDrink = strDrink;
         this.instructions = instructions;
         this.alcoholic = alcoholic;
         this.glass = glass;
-        this.imagePath = imagePath;
+        this.strDrinkThumb = strDrinkThumb;
         this.ingred1 = ingred1;
         this.ingred2 = ingred2;
         this.ingred3 = ingred3;
@@ -58,20 +58,20 @@ public class Cocktail {
         this.measure5 = measure5;
     }
 
-    public String getId() {
-        return id;
+    public String getIdDrink() {
+        return idDrink;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setIdDrink(String idDrink) {
+        this.idDrink = idDrink;
     }
 
-    public String getName() {
-        return name;
+    public String getStrDrink() {
+        return strDrink;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setStrDrink(String strDrink) {
+        this.strDrink = strDrink;
     }
 
     public String getInstructions() {
@@ -98,12 +98,12 @@ public class Cocktail {
         this.glass = glass;
     }
 
-    public String getImagePath() {
-        return imagePath;
+    public String getStrDrinkThumb() {
+        return strDrinkThumb;
     }
 
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
+    public void setStrDrinkThumb(String strDrinkThumb) {
+        this.strDrinkThumb = strDrinkThumb;
     }
 
     public String getIngred1() {
@@ -189,12 +189,12 @@ public class Cocktail {
     @Override
     public String toString() {
         return "Cocktail{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
+                "idDrink='" + idDrink + '\'' +
+                ", strDrink='" + strDrink + '\'' +
                 ", instructions='" + instructions + '\'' +
                 ", alcoholic='" + alcoholic + '\'' +
                 ", glass='" + glass + '\'' +
-                ", imagePath='" + imagePath + '\'' +
+                ", strDrinkThumb='" + strDrinkThumb + '\'' +
                 ", ingred1='" + ingred1 + '\'' +
                 ", ingred2='" + ingred2 + '\'' +
                 ", ingred3='" + ingred3 + '\'' +

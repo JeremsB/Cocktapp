@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.LinearLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="140dp"
     android:orientation="horizontal"
     android:padding="8dp"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:background="@drawable/border">
 
     <ImageView
         android:id="@+id/tv_item_cocktail_image"
@@ -22,4 +23,4 @@
         android:text="Cocktail name"
         />
 
-</androidx.constraintlayout.widget.LinearLayout>
+</LinearLayout>

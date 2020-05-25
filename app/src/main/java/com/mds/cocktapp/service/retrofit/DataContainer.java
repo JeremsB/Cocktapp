@@ -7,28 +7,28 @@ import java.util.List;
 
 public class DataContainer {
 
-    @SerializedName("cocktails")
-    private List<Cocktail> cocktails;
+    @SerializedName("drinks")
+    private List<Cocktail> drinks;
 
     public DataContainer() {
     }
 
-    public DataContainer(List<Cocktail> cocktails) {
-        this.cocktails = cocktails;
+    public DataContainer(List<Cocktail> drinks) {
+        this.drinks = drinks;
     }
 
     public List<Cocktail> getCocktails() {
-        return cocktails;
+        return drinks;
     }
 
-    public void setCocktails(List<Cocktail> cocktails) {
-        this.cocktails = cocktails;
+    public void setCocktails(List<Cocktail> drinks) {
+        this.drinks = drinks;
     }
 
     @Override
     public String toString() {
         return "DataContainer{" +
-                "cocktails=" + cocktails +
+                "cocktails=" + drinks +
                 '}';
     }
 }
