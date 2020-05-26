@@ -1,5 +1,6 @@
 package com.mds.cocktapp.adapter;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,13 +50,12 @@ public class CocktailsAdapter extends RecyclerView.Adapter<CocktailViewHolder> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Context context = view.getContext();
                 String idCocktail=cocktails.get(position).getId();
                 //You can call detail fragment here
-                /*
-                Intent intent = new Intent(this, DetailActivity.class);
-                intent.putExtra(EXTRA_MESSAGE, idCocktail);
-                startActivity(intent);
-                */
+                Intent intent = new Intent(context, DetailActivity.class);
+                intent.putExtra("id", idCocktail);
+                context.startActivity(intent);
             }
         });
     }

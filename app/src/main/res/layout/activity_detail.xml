@@ -7,12 +7,155 @@
     tools:context=".activity.DetailActivity">
 
     <TextView
-        android:id="@+id/detail_textview"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_cocktail_name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginTop="156dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="6dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_alcoolise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_name"
+        android:text="Alcool"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_glass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_alcoolise"
+        android:text="Glass"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_glass"
+        android:text="Category"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_category"
+        android:text="Instructions"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_ingred1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_instructions"
+        android:text="Ingredient 1"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_ingred2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred1"
+        android:text="Ingredient 2"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_ingred3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred2"
+        android:text="Ingredient 3"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_ingred4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred3"
+        android:text="Ingredient 4"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_ingred5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred4"
+        android:text="Ingredient 5"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_measure1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred5"
+        android:text="Measure 1"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_measure2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure1"
+        android:text="Measure 2"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_measure3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure2"
+        android:text="Measure 3"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_measure4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure3"
+        android:text="Measure 4"/>
+
+    <TextView
+        android:id="@+id/tv_cocktail_measure5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure4"
+        android:text="Measure 5"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

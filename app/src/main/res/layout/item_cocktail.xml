@@ -2,22 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:padding="8dp">
 
-    <ImageView
-        android:id="@+id/tv_item_cocktail_image"
+    <androidx.cardview.widget.CardView
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:elevation="10dp" />
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/tv_item_cocktail_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="10dp" />
+
+    </androidx.cardview.widget.CardView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="62dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="-20dp"
+        android:layout_marginTop="-10dp"
         android:background="@drawable/border"
         android:orientation="horizontal"
         android:paddingLeft="50dp">
@@ -27,6 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
+            android:layout_marginEnd="3dp"
             android:text="Cocktail name"
             android:textAllCaps="true"
             android:textColor="#FFFFFF"

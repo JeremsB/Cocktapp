@@ -70,7 +70,7 @@
                     android:layout_weight="1"
                     android:text="RECHERCHER"
                     android:textColor="#B35340"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <com.google.android.material.textfield.TextInputLayout

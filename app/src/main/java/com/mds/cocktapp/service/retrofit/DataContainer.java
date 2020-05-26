@@ -3,6 +3,7 @@ package com.mds.cocktapp.service.retrofit;
 import com.google.gson.annotations.SerializedName;
 import com.mds.cocktapp.model.Cocktail;
 
+import java.util.Collection;
 import java.util.List;
 
 public class DataContainer {
@@ -31,4 +32,5 @@ public class DataContainer {
                 "cocktails=" + drinks +
                 '}';
     }
+
 }

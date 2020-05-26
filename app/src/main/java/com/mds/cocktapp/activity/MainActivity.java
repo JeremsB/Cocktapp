@@ -25,7 +25,6 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "Cocktail%";
-    private static final String EXTRA_MESSAGE = "test";
 
     private RecyclerView rv_main_cocktails;
     private String mDetailMessage;
@@ -66,11 +65,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void viewDetail(View view) {
-        mDetailMessage = "tset";
-
-        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-        intent.putExtra(EXTRA_MESSAGE, mDetailMessage);
-        startActivity(intent);
-    }
 }

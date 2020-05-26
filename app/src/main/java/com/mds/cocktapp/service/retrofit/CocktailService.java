@@ -9,4 +9,7 @@ public interface CocktailService {
     @GET("filter.php")
     Call<DataContainer> getCocktails(@Query("i") String search);
 
+    @GET("lookup.php")
+    Call<DataContainer> getInfosCocktail(@Query("i") String id);
+
 }
