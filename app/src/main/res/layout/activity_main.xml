@@ -27,7 +27,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="25dp"
                 android:background="#00FFFFFF"
-                app:srcCompat="@drawable/random" />
+                app:srcCompat="@drawable/ic_random" />
 
             <TextView
                 android:id="@+id/textView"
@@ -93,7 +93,6 @@
                     android:textColorHighlight="#233342"
                     android:textColorHint="#233342"
                     android:textColorLink="#233342"
-                    android:background="@null"
                     android:singleLine="true"
                     android:imeOptions="actionDone"/>
 
@@ -104,7 +103,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:background="#00FFFFFF"
-                    app:srcCompat="@drawable/search" />
+                    app:srcCompat="@drawable/ic_search" />
 
             </LinearLayout>
 
