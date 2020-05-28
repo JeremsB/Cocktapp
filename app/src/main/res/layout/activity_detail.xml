@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".activity.DetailActivity">
 
     <androidx.cardview.widget.CardView
@@ -24,252 +25,277 @@
         android:id="@+id/tv_cocktail_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="300dp"
+        android:text="Name"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Name"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_cocktail_alcoolise"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Alcool"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_name"
-        android:text="Alcool"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_name" />
 
     <TextView
         android:id="@+id/tv_cocktail_glass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Glass"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_alcoolise"
-        android:text="Glass"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_alcoolise" />
 
     <TextView
         android:id="@+id/tv_cocktail_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Category"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_glass"
-        android:text="Category"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_glass" />
 
     <TextView
         android:id="@+id/tv_cocktail_instructions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_category"
-        android:text="Instructions"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_category" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 1"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_instructions"
-        android:text="Ingredient 1"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_instructions" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 2"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred1"
-        android:text="Ingredient 2"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred1" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 3"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred2"
-        android:text="Ingredient 3"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred2" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 4"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred3"
-        android:text="Ingredient 4"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred3" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 5"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred4"
-        android:text="Ingredient 5"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred4" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 6"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred5"
-        android:text="Ingredient 6"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred5" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 7"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred6"
-        android:text="Ingredient 7"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred6" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 8"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred7"
-        android:text="Ingredient 8"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred7" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 9"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred8"
-        android:text="Ingredient 9"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred8" />
 
     <TextView
         android:id="@+id/tv_cocktail_ingred10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Ingredient 10"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred9"
-        android:text="Ingredient 10"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred9" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 1"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred10"
-        android:text="Measure 1"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred10" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 2"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure1"
-        android:text="Measure 2"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure1" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 3"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure2"
-        android:text="Measure 3"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure2" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 4"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure3"
-        android:text="Measure 4"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure3" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 5"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure4"
-        android:text="Measure 5"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure4" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 6"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred5"
-        android:text="Measure 6"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred5" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 7"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure6"
-        android:text="Measure 7"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure6" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 8"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure7"
-        android:text="Measure 8"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure7" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 9"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure8"
-        android:text="Measure 9"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure8" />
 
     <TextView
         android:id="@+id/tv_cocktail_measure10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Measure 10"
+        android:textColor="#191919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure9"
-        android:text="Measure 10"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure9" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
