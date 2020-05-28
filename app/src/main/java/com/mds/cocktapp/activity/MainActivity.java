@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rv_main_cocktails;
     private ImageButton btn_search;
     private ImageButton btn_random;
+    private Button bt_vodka;
+    private Button bt_rhum;
     private String ingredient;
     private EditText et_search;
 
@@ -75,6 +77,24 @@ public class MainActivity extends AppCompatActivity {
                 et_search.setText("");
 
                 showCocktails(ingredient);
+
+            }
+        });
+
+        bt_vodka = findViewById(R.id.bt_vodka);
+        bt_vodka.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                showCocktails("Vodka");
+
+            }
+        });
+
+        bt_rhum = findViewById(R.id.bt_rhum);
+        bt_rhum.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                showCocktails("Rum");
 
             }
         });
