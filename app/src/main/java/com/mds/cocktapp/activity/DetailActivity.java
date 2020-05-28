@@ -39,12 +39,12 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<DataContainer> call, Response<DataContainer> response) {
                 Log.d(TAG, "MainActivity - getInfosCocktailCall - onResponse");
-                Log.d(TAG, response.code() + "");
+                //Log.d(TAG, response.code() + "");
                 Log.d(TAG, response.body().toString() + "");
                 cocktail.clear();
                 cocktail = response.body().getCocktails();
                 Log.d(TAG, cocktail.toString());
-                Log.d(TAG, cocktail.getClass().getName());
+                Log.d(TAG, String.valueOf(cocktail.getClass()));
             }
 
             @Override
@@ -54,11 +54,9 @@ public class DetailActivity extends AppCompatActivity {
             }
         });
 
-        Log.d("test", String.valueOf(cocktail.toArray()));
-        Log.d("test", cocktail.toString());
+        //Log.d("test", String.valueOf(cocktail.toArray()));
+        //Log.d("test", cocktail.toString());
         //Log.d(TAG, testCocktail.toString() + "");
-
-
 /*
         TextView tv_cocktail_name = findViewById(R.id.tv_cocktail_name);
         tv_cocktail_name.setText(testCocktail.getName());
