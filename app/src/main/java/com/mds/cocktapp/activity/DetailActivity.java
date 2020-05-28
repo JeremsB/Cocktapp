@@ -26,6 +26,7 @@ public class DetailActivity extends AppCompatActivity {
 
     public static final String TAG = "DetailCocktail%";
     private Cocktail cocktail;
+    ImageView iv_cocktail_image;
     TextView tv_cocktail_name;
     TextView tv_cocktail_alcoolise;
     TextView tv_cocktail_category;
@@ -48,6 +49,7 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+        iv_cocktail_image = findViewById(R.id.iv_cocktail_image);
         tv_cocktail_name = findViewById(R.id.tv_cocktail_name);
         tv_cocktail_alcoolise = findViewById(R.id.tv_cocktail_alcoolise);
         tv_cocktail_category = findViewById(R.id.tv_cocktail_category);
@@ -88,6 +90,7 @@ public class DetailActivity extends AppCompatActivity {
 
     void showCocktail() {
 
+        Picasso.get().load(cocktail.getStrDrinkThumb()).into(iv_cocktail_image);
         tv_cocktail_name.setText(cocktail.getName());
         tv_cocktail_alcoolise.setText(cocktail.getAlcoholic());
         tv_cocktail_category.setText(cocktail.getCategory());
