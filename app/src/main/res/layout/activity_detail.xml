@@ -122,6 +122,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred3" />
 
+<<<<<<< HEAD
     <TextView
         android:id="@+id/tv_cocktail_ingred5"
         android:layout_width="match_parent"
@@ -132,6 +133,16 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred4" />
+=======
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="50dp">
+>>>>>>> master
 
     <TextView
         android:id="@+id/tv_cocktail_ingred6"
@@ -186,6 +197,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
         app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred9" />
 
     <TextView
@@ -198,6 +210,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred10" />
+=======
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_glass" -->
+    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_category">
+>>>>>>> master
 
     <TextView
         android:id="@+id/tv_cocktail_measure2"
@@ -298,5 +325,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure9" />
 
+<<<<<<< HEAD
+=======
+        <TextView
+            android:id="@+id/tv_cocktail_measure1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 1"
+            android:textColor="#191919" />
+    </LinearLayout>
+>>>>>>> master
 
 </androidx.constraintlayout.widget.ConstraintLayout>
