@@ -14,126 +14,202 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageButton
+            android:id="@+id/btn_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/ic_random" />
+
         <ImageView
-            android:id="@+id/iv_cocktail_image"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:elevation="10dp" />
+            android:id="@+id/imageView2"
+            android:layout_width="126dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/logo" />
 
-    </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="FAV"
+            android:textColor="#233342"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/tv_cocktail_name"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:text="Name"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="50dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3"
+        tools:layout_editor_absoluteX="50dp">
 
-    <TextView
-        android:id="@+id/tv_cocktail_alcoolise"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Alcool"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_name" />
+        <TextView
+            android:id="@+id/tv_cocktail_alcoolise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Alcool"
+            android:textColor="#191919" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_glass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Glass"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_alcoolise" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_cocktail_category"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Category"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_glass" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="8dp">
 
-    <TextView
-        android:id="@+id/tv_cocktail_instructions"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Instructions"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_category" />
+                <ImageView
+                    android:id="@+id/iv_cocktail_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:elevation="10dp" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_ingred1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredient 1"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_instructions" />
+            </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/tv_cocktail_ingred2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredient 2"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:paddingLeft="50dp">
 
-    <TextView
-        android:id="@+id/tv_cocktail_ingred3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredient 3"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred2" />
+                <TextView
+                    android:id="@+id/tv_cocktail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Name"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_ingred4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredient 4"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred3" />
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
-<<<<<<< HEAD
-    <TextView
-        android:id="@+id/tv_cocktail_ingred5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredient 5"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred4" />
-=======
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 6"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 7"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 8"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 9"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_cocktail_ingred10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Ingredient 10"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -142,77 +218,53 @@
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:layout_editor_absoluteX="50dp">
->>>>>>> master
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions :"
+            android:textAllCaps="true"
+            android:textColor="#B35340"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cocktail_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:textColor="#191919" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Type de verre :"
+            android:textAllCaps="true"
+            android:textColor="#B35340"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cocktail_glass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glass"
+            android:textColor="#191919" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_cocktail_ingred6"
+        android:id="@+id/tv_cocktail_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ingredient 6"
+        android:text="Category"
         android:textColor="#191919"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred5" />
-
-    <TextView
-        android:id="@+id/tv_cocktail_ingred7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredient 7"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred6" />
-
-    <TextView
-        android:id="@+id/tv_cocktail_ingred8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredient 8"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred7" />
-
-    <TextView
-        android:id="@+id/tv_cocktail_ingred9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredient 9"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred8" />
-
-    <TextView
-        android:id="@+id/tv_cocktail_ingred10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingredient 10"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred9" />
-
-    <TextView
-        android:id="@+id/tv_cocktail_measure1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 1"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred10" />
-=======
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
-<!--        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_glass" -->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_glass" -->
     />
 
     <LinearLayout
@@ -224,109 +276,70 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_category">
->>>>>>> master
 
-    <TextView
-        android:id="@+id/tv_cocktail_measure2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 2"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure1" />
+        <TextView
+            android:id="@+id/tv_cocktail_measure3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 3"
+            android:textColor="#191919" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_measure3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 3"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure2" />
+        <TextView
+            android:id="@+id/tv_cocktail_measure5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 5"
+            android:textColor="#191919" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_measure4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 4"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure3" />
+        <TextView
+            android:id="@+id/tv_cocktail_measure6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 6"
+            android:textColor="#191919" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_measure5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 5"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure4" />
+        <TextView
+            android:id="@+id/tv_cocktail_measure8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 8"
+            android:textColor="#191919" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_measure6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 6"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_ingred5" />
+        <TextView
+            android:id="@+id/tv_cocktail_measure4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 4"
+            android:textColor="#191919" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_measure7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 7"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure6" />
+        <TextView
+            android:id="@+id/tv_cocktail_measure2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 2"
+            android:textColor="#191919" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_measure8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 8"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure7" />
+        <TextView
+            android:id="@+id/tv_cocktail_measure9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 9"
+            android:textColor="#191919" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_measure9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 9"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure8" />
+        <TextView
+            android:id="@+id/tv_cocktail_measure7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 7"
+            android:textColor="#191919" />
 
-    <TextView
-        android:id="@+id/tv_cocktail_measure10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Measure 10"
-        android:textColor="#191919"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cocktail_measure9" />
+        <TextView
+            android:id="@+id/tv_cocktail_measure10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Measure 10"
+            android:textColor="#191919" />
 
-<<<<<<< HEAD
-=======
         <TextView
             android:id="@+id/tv_cocktail_measure1"
             android:layout_width="match_parent"
@@ -334,6 +347,5 @@
             android:text="Measure 1"
             android:textColor="#191919" />
     </LinearLayout>
->>>>>>> master
 
 </androidx.constraintlayout.widget.ConstraintLayout>

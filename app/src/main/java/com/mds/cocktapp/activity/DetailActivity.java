@@ -37,12 +37,21 @@ public class DetailActivity extends AppCompatActivity {
     TextView tv_cocktail_ingred3;
     TextView tv_cocktail_ingred4;
     TextView tv_cocktail_ingred5;
+    TextView tv_cocktail_ingred6;
+    TextView tv_cocktail_ingred7;
+    TextView tv_cocktail_ingred8;
+    TextView tv_cocktail_ingred9;
+    TextView tv_cocktail_ingred10;
     TextView tv_cocktail_measure1;
     TextView tv_cocktail_measure2;
     TextView tv_cocktail_measure3;
     TextView tv_cocktail_measure4;
     TextView tv_cocktail_measure5;
-
+    TextView tv_cocktail_measure6;
+    TextView tv_cocktail_measure7;
+    TextView tv_cocktail_measure8;
+    TextView tv_cocktail_measure9;
+    TextView tv_cocktail_measure10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,11 +69,21 @@ public class DetailActivity extends AppCompatActivity {
         tv_cocktail_ingred3 = findViewById(R.id.tv_cocktail_ingred3);
         tv_cocktail_ingred4 = findViewById(R.id.tv_cocktail_ingred4);
         tv_cocktail_ingred5 = findViewById(R.id.tv_cocktail_ingred5);
+        tv_cocktail_ingred6 = findViewById(R.id.tv_cocktail_ingred6);
+        tv_cocktail_ingred7 = findViewById(R.id.tv_cocktail_ingred7);
+        tv_cocktail_ingred8 = findViewById(R.id.tv_cocktail_ingred8);
+        tv_cocktail_ingred9 = findViewById(R.id.tv_cocktail_ingred9);
+        tv_cocktail_ingred10 = findViewById(R.id.tv_cocktail_ingred10);
         tv_cocktail_measure1 = findViewById(R.id.tv_cocktail_measure1);
         tv_cocktail_measure2 = findViewById(R.id.tv_cocktail_measure2);
         tv_cocktail_measure3 = findViewById(R.id.tv_cocktail_measure3);
         tv_cocktail_measure4 = findViewById(R.id.tv_cocktail_measure4);
         tv_cocktail_measure5 = findViewById(R.id.tv_cocktail_measure5);
+        tv_cocktail_measure6 = findViewById(R.id.tv_cocktail_measure6);
+        tv_cocktail_measure7 = findViewById(R.id.tv_cocktail_measure7);
+        tv_cocktail_measure8 = findViewById(R.id.tv_cocktail_measure8);
+        tv_cocktail_measure9 = findViewById(R.id.tv_cocktail_measure9);
+        tv_cocktail_measure10 = findViewById(R.id.tv_cocktail_measure10);
 
         Intent intent = getIntent();
         String idCocktail = intent.getStringExtra("id");
@@ -101,11 +120,21 @@ public class DetailActivity extends AppCompatActivity {
         tv_cocktail_ingred3.setText(cocktail.getIngred3());
         tv_cocktail_ingred4.setText(cocktail.getIngred4());
         tv_cocktail_ingred5.setText(cocktail.getIngred5());
+        tv_cocktail_ingred6.setText(cocktail.getIngred6());
+        tv_cocktail_ingred7.setText(cocktail.getIngred7());
+        tv_cocktail_ingred8.setText(cocktail.getIngred8());
+        tv_cocktail_ingred9.setText(cocktail.getIngred9());
+        tv_cocktail_ingred10.setText(cocktail.getIngred10());
         tv_cocktail_measure1.setText(cocktail.getMeasure1());
         tv_cocktail_measure2.setText(cocktail.getMeasure2());
         tv_cocktail_measure3.setText(cocktail.getMeasure3());
         tv_cocktail_measure4.setText(cocktail.getMeasure4());
         tv_cocktail_measure5.setText(cocktail.getMeasure5());
+        tv_cocktail_measure6.setText(cocktail.getMeasure6());
+        tv_cocktail_measure7.setText(cocktail.getMeasure7());
+        tv_cocktail_measure8.setText(cocktail.getMeasure8());
+        tv_cocktail_measure9.setText(cocktail.getMeasure9());
+        tv_cocktail_measure10.setText(cocktail.getMeasure10());
 
         ArrayList<TextView> mylist = new ArrayList<TextView>();
         mylist.add(tv_cocktail_name);
