@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rv_main_cocktails;
     private ImageButton btn_search;
+    private ImageButton btn_random;
     private String ingredient;
     private EditText et_search;
 
@@ -47,15 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
         rv_main_cocktails = findViewById(R.id.rv_main_cocktails);
 
-        final CocktailsAdapter cocktailsAdapter = new CocktailsAdapter(cocktails);
-
-        rv_main_cocktails.setAdapter(cocktailsAdapter);
-        rv_main_cocktails.setLayoutManager(new LinearLayoutManager(this));
-
         String [] arr = {"Gin", "Vodka", "Rum", "Tequila", "Jagermeister", "Whiskey"};
         Random random = new Random();
         int select = random.nextInt(arr.length);
         ingredient = arr[select];
+
+        this.showCocktails(ingredient);
 
         et_search = findViewById(R.id.et_search);
         et_search.setOnEditorActionListener(new EditText.OnEditorActionListener() {
@@ -76,28 +74,27 @@ public class MainActivity extends AppCompatActivity {
                 ingredient = et_search.getText().toString();
                 et_search.setText("");
 
-                Call<DataContainer> getCocktailsCall = RetrofitClient.getCocktailService().getCocktails(ingredient);
-                getCocktailsCall.enqueue(new Callback<DataContainer>() {
-                    @Override
-                    public void onResponse(Call<DataContainer> call, Response<DataContainer> response) {
-                        Log.d(TAG, "MainActivity - getCocktailsCall - onResponse");
-                        Log.d(TAG, response.code() + "");
-                        Log.d(TAG, response.body().toString() + "");
-                        cocktails.clear();
-                        cocktails.addAll(response.body().getCocktails());
-                        cocktailsAdapter.notifyDataSetChanged();
-                    }
-
-                    @Override
-                    public void onFailure(Call<DataContainer> call, Throwable t) {
-                        Log.d(TAG, "MainActivity - getCocktailsCall - onResponse");
-                        Log.d(TAG, t.getMessage());
-                    }
-                });
+                showCocktails(ingredient);
 
             }
         });
 
+        btn_random = findViewById(R.id.btn_random);
+        btn_random.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                showRandomCocktail();
+
+            }
+        });
+
+    }
+
+    private void showCocktails(String ingredient) {
+
+        final CocktailsAdapter cocktailsAdapter = new CocktailsAdapter(cocktails);
+        rv_main_cocktails.setAdapter(cocktailsAdapter);
+        rv_main_cocktails.setLayoutManager(new LinearLayoutManager(this));
 
         Call<DataContainer> getCocktailsCall = RetrofitClient.getCocktailService().getCocktails(ingredient);
         getCocktailsCall.enqueue(new Callback<DataContainer>() {
@@ -117,7 +114,33 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, t.getMessage());
             }
         });
+    }
 
+    private void showRandomCocktail(){
+        Call<DataContainer> getRandomCocktailCall = RetrofitClient.getCocktailService().getRandomCocktail();
+        getRandomCocktailCall.enqueue(new Callback<DataContainer>() {
+            @Override
+            public void onResponse(Call<DataContainer> call, Response<DataContainer> response) {
+                Log.d(TAG, "MainActivity - getRandomCocktailCall - onResponse");
+                Log.d(TAG, response.code() + "");
+                Log.d(TAG, response.body().toString() + "");
+                cocktails.clear();
+                cocktails.addAll(response.body().getCocktails());
+            }
+
+            @Override
+            public void onFailure(Call<DataContainer> call, Throwable t) {
+                Log.d(TAG, "MainActivity - getRandomCocktailCall - onResponse");
+                Log.d(TAG, t.getMessage());
+            }
+        });
+
+        //Récupérer l'id
+        //String idCocktail=cocktails.getId();
+        String idCocktail = "12772";
+        Intent intent = new Intent(MainActivity.this, DetailActivity.class);
+        intent.putExtra("id", idCocktail);
+        startActivity(intent);
     }
 
 }

@@ -34,6 +34,8 @@ public class DetailActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String idCocktail = intent.getStringExtra("id");
 
+        System.out.println("ID COCKTAIL: " + idCocktail);
+
         Call<DataContainer> getInfosCocktailCall = RetrofitClient.getCocktailService().getInfosCocktail(idCocktail);
         getInfosCocktailCall.enqueue(new Callback<DataContainer>() {
             @Override

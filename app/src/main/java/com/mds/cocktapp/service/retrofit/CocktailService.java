@@ -12,4 +12,7 @@ public interface CocktailService {
     @GET("lookup.php")
     Call<DataContainer> getInfosCocktail(@Query("i") String id);
 
+    @GET("random.php")
+    Call<DataContainer> getRandomCocktail();
+
 }
