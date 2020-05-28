@@ -83,11 +83,12 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <com.google.android.material.textfield.TextInputEditText
+                <EditText
                     android:id="@+id/et_search"
                     android:layout_width="150dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="-5dp"
                     android:shadowColor="#E2E1E0"
                     android:textColor="#233342"
                     android:textColorHighlight="#233342"
@@ -101,7 +102,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
                     android:background="#00FFFFFF"
-                    tools:srcCompat="@drawable/search" />
+                    app:srcCompat="@drawable/search" />
 
             </LinearLayout>
 
