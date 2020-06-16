@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btn_random;
     private Button bt_vodka;
     private Button bt_rhum;
+    private Button bt_whisky;
+    private Button bt_eaudevie;
+    private Button bt_tequila;
+    private Button bt_gin;
     private String ingredient;
     private EditText et_search;
 
@@ -95,6 +99,42 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 showCocktails("Rum");
+
+            }
+        });
+
+        bt_eaudevie = findViewById(R.id.bt_eaudevie);
+        bt_eaudevie.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                showCocktails("Brandy");
+
+            }
+        });
+
+        bt_whisky = findViewById(R.id.bt_whisky);
+        bt_whisky.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                showCocktails("Whiskey");
+
+            }
+        });
+
+        bt_gin = findViewById(R.id.bt_gin);
+        bt_gin.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                showCocktails("Brandy");
+
+            }
+        });
+
+        bt_tequila = findViewById(R.id.bt_tequila);
+        bt_tequila.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                showCocktails("Whiskey");
 
             }
         });

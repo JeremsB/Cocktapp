@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "308851426821",
+    "firebase_url": "https://cocktapp-8c495.firebaseio.com",
+    "project_id": "cocktapp-8c495",
+    "storage_bucket": "cocktapp-8c495.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308851426821:android:32b9643289a0ab988f7e6c",
+        "android_client_info": {
+          "package_name": "com.mds.cocktapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308851426821-o3kieo5brd2e5hjils03nvafht7ulr6v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4eXauAhvk1lXO57sMnf_NPZ8IBtnPrYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308851426821-o3kieo5brd2e5hjils03nvafht7ulr6v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

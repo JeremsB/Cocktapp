@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.mds.cocktapp.R;
@@ -28,7 +29,7 @@ public class DetailActivity extends AppCompatActivity {
     private Cocktail cocktail;
     ImageView iv_cocktail_image;
     TextView tv_cocktail_name;
-    TextView tv_cocktail_alcoolise;
+    ImageView iv_cocktail_alcoolise;
     TextView tv_cocktail_category;
     TextView tv_cocktail_glass;
     TextView tv_cocktail_instructions;
@@ -60,7 +61,7 @@ public class DetailActivity extends AppCompatActivity {
 
         iv_cocktail_image = findViewById(R.id.iv_cocktail_image);
         tv_cocktail_name = findViewById(R.id.tv_cocktail_name);
-        tv_cocktail_alcoolise = findViewById(R.id.tv_cocktail_alcoolise);
+        iv_cocktail_alcoolise = findViewById(R.id.iv_cocktail_alcoolise);
         tv_cocktail_category = findViewById(R.id.tv_cocktail_category);
         tv_cocktail_glass = findViewById(R.id.tv_cocktail_glass);
         tv_cocktail_instructions = findViewById(R.id.tv_cocktail_instructions);
@@ -111,7 +112,6 @@ public class DetailActivity extends AppCompatActivity {
 
         Picasso.get().load(cocktail.getStrDrinkThumb()).into(iv_cocktail_image);
         tv_cocktail_name.setText(cocktail.getName());
-        tv_cocktail_alcoolise.setText(cocktail.getAlcoholic());
         tv_cocktail_category.setText(cocktail.getCategory());
         tv_cocktail_glass.setText(cocktail.getGlass());
         tv_cocktail_instructions.setText(cocktail.getInstructions());
@@ -136,9 +136,15 @@ public class DetailActivity extends AppCompatActivity {
         tv_cocktail_measure9.setText(cocktail.getMeasure9());
         tv_cocktail_measure10.setText(cocktail.getMeasure10());
 
+        if (cocktail.getAlcoholic().equals("Alcoholic")) {
+            iv_cocktail_alcoolise.setImageResource(R.drawable.adult);
+        } else {
+            iv_cocktail_alcoolise.setVisibility(View.GONE);
+        }
+
         ArrayList<TextView> mylist = new ArrayList<TextView>();
         mylist.add(tv_cocktail_name);
-        mylist.add(tv_cocktail_alcoolise);
+        //mylist.add(tv_cocktail_alcoolise);
         mylist.add(tv_cocktail_category);
         mylist.add(tv_cocktail_glass);
         mylist.add(tv_cocktail_instructions);
@@ -147,11 +153,21 @@ public class DetailActivity extends AppCompatActivity {
         mylist.add(tv_cocktail_ingred3);
         mylist.add(tv_cocktail_ingred4);
         mylist.add(tv_cocktail_ingred5);
+        mylist.add(tv_cocktail_ingred6);
+        mylist.add(tv_cocktail_ingred7);
+        mylist.add(tv_cocktail_ingred8);
+        mylist.add(tv_cocktail_ingred9);
+        mylist.add(tv_cocktail_ingred10);
         mylist.add(tv_cocktail_measure1);
         mylist.add(tv_cocktail_measure2);
         mylist.add(tv_cocktail_measure3);
         mylist.add(tv_cocktail_measure4);
         mylist.add(tv_cocktail_measure5);
+        mylist.add(tv_cocktail_measure6);
+        mylist.add(tv_cocktail_measure7);
+        mylist.add(tv_cocktail_measure8);
+        mylist.add(tv_cocktail_measure9);
+        mylist.add(tv_cocktail_measure10);
 
         for (TextView tv : mylist) {
             if (tv.getText().toString().equals("")) {

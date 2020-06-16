@@ -153,7 +153,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/bt_eaudevie"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_margin="5dp"
@@ -164,7 +164,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <Button
-                    android:id="@+id/button10"
+                    android:id="@+id/bt_tequila"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_margin="5dp"
@@ -173,7 +173,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/bt_gin"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_margin="5dp"
