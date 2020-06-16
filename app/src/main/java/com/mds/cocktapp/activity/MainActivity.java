@@ -186,6 +186,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, response.body().toString() + "");
                 cocktails.clear();
                 cocktails.addAll(response.body().getCocktails());
+                Log.d(TAG, cocktails.toString() + "");
+                Log.d(TAG, cocktails.get(0).getId() + "");
             }
 
             @Override
@@ -197,7 +199,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Récupérer l'id
         //String idCocktail=cocktails.getId();
-        String idCocktail = "12772";
+        Log.d(TAG, cocktails + "TEST");
+        //String idCocktail = "12772";
+        String idCocktail = cocktails.get(0).getId();
         Intent intent = new Intent(MainActivity.this, DetailActivity.class);
         intent.putExtra("id", idCocktail);
         startActivity(intent);

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -53,6 +55,7 @@ public class DetailActivity extends AppCompatActivity {
     TextView tv_cocktail_measure8;
     TextView tv_cocktail_measure9;
     TextView tv_cocktail_measure10;
+    ImageButton btn_random;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,6 +108,9 @@ public class DetailActivity extends AppCompatActivity {
                 Log.d(TAG, t.getMessage());
             }
         });
+
+        btn_random = findViewById(R.id.btn_random);
+        btn_random.setVisibility(View.GONE);
 
     }
 
